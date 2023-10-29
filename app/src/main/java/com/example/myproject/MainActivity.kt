@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         recyclerViewPopular = findViewById(R.id.viewPopular)
 
         // Ajout d'exemples d'éléments à la liste itemsListPopular
-        val item1 = ItemsDomaine("Title 1", "Address 1", 100, "pic1")
-        val item2 = ItemsDomaine("Title 2", "Address 2", 200, "pic2")
+        val item1 = ItemsDomaine("Dar Calibori", "Sousse", 100, "pic1")
+        val item2 = ItemsDomaine("Plermio", "Sud", 200, "pic2")
         itemsListPopular.add(item1)
         itemsListPopular.add(item2)
 
@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         recyclerViewPopular.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         recyclerViewPopular.adapter = itemsAdapterPopular
 
-        // ... le reste de votre code
     }
 }
 
